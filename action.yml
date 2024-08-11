@@ -1,0 +1,13 @@
+name: "Setup PatchVer"
+description: "Setup PatchVer and add it to the PATH"
+author: "Diamond Drake Ventures"
+inputs:
+  patchver-version:
+    description: "The PatchVer version to download and use."
+    default: "0.1.0"
+outputs:
+  patchver-version:
+    description: "The installed PatchVer version."
+runs:
+  using: "node20"
+  main: "dist/index.js"

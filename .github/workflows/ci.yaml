@@ -1,0 +1,14 @@
+name: Continuos Integration
+on:
+  pull_request:
+    branches:
+    - main
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v4
+    - name: Test local action
+      uses: ./
