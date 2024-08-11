@@ -5,10 +5,15 @@
   "description": "Setup PatchVer and add it to the PATH",
   "main": "index.js",
   "scripts": {
-    "build": "ncc build src/index.js -o dist --source-map --license licenses.txt"
+    "build": "ncc build src/index.js -o dist --source-map --license licenses.txt",
+    "pre-checkin": "npm run build"
   },
   "author": "Diamond Drake Ventures",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiamondDrakeVentures/setup-patchver.git"
+  },
   "dependencies": {
     "@actions/core": "^1.10.1",
     "@actions/io": "^1.1.3",
